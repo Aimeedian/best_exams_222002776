@@ -1,0 +1,166 @@
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#errorMsg {
+    color: red;
+}
+.contact-info {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: left;
+}
+.contact-info1 {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: right;
+    margin-top: -200px;
+}
+.contact-info1 a{
+    text-decoration: none;
+    padding: 20px;
+    color: blue;
+    font-size: 20px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.contact-form {
+    padding: 20px;
+    text-align: center;
+    background-color: transparent; ;
+}
+
+.contact-form form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 2px solid red;
+            background-color: yellow;
+            border-radius: 10px; 
+        }
+
+        .heading {
+            text-align: center;
+            font-weight: bold;
+            font-size: 25px;
+            color: blue;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-size: 20px;
+            color: black;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="number"],
+        input[type="date"],
+        input[type="email"],
+        input[type="option"] {
+            width:50%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="radio"] {
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"],
+        input[type="button"] {
+            width: 48%;
+            padding: 10px;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: #dc3545;
+            color: white;
+            width: 200px;
+        }
+
+        input[type="button"] {
+            background-color: #007bff;
+            color: white;
+        }
+
+        input[type="submit"]:last-child {
+            background-color: blue;
+            margin-left: 4%;
+        }
+
+        select {
+            width: calc(100% - 12px); /* Adjusted width */
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            appearance: none; /* Remove default arrow */
+            background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>'); /* Custom arrow */
+            background-repeat: no-repeat;
+            background-position: right 8px center;
+            background-size: 24px;
+            cursor: pointer;
+        }

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+       
+        header h1 {
+            margin: 0;
+            color: #FFF;
+        }
+
+
+        .container {
+            max-width: 800px;
+            margin: 100px auto 20px; /* Adjust margin to avoid header overlap */
+            padding: 20px;
+            background-color: #FFF;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .about h2 {
+            color: #008080; /* Teal */
+        }
+
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .team-member {
+            flex: 1 1 calc(33.333% - 20px);
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 100%;
+            height: auto;
+            border-radius: 40%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styling */
+        .header {
+            display: flex;
+            align-items: center;
+            background-color: dodgerblue;
+            border-bottom: 5px solid black;
+            top: 0px;
+        }
+        .header h3 {
+            color: white;
+            margin: 0;
+            font-weight: bold;
+        }
+        .navigation {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navigation li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .navigation li a {
+            text-decoration: none;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 3px;
+        }
+        .navigation li a:hover {
+            background-color: deeppink;
+        }
+
+        /* Search bar styling */
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+        .search-bar input[type="search"] {
+            width: 150px;
+            padding: 8px;
+            border-radius: 10px;
+            border: none;
+        }
+        .search-bar button[type="submit"] {
+            background-color: red;
+            color: white;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .search-bar button[type="submit"]:hover {
+            background-color: darkred;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: darkred;
+            text-align: center;
+            width: 100%;
+            height: 70px;
+            color: white;
+            font-size: 25px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        /* Dropdown styles */
+        .dropdown-contents {
+            display: none;
+            position: absolute;
+            background-color: tomato;
+            text-decoration: none;
+            min-width: 120px;
+            z-index: 1;
+        }
+        .dropdown-contents a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+        .dropdown-contents a:hover {
+            background-color: red;
+        }
+        .dropdown:hover .dropdown-contents {
+            display: block;
+        }
+       .p1 {
+    font-size: 25px; /* Adjust font size as needed */
+    line-height: 1.6; /* Adjust line height as needed */
+    color: white; /* Text color */
+    margin-bottom: 10px; /* Bottom margin */
+    margin-top: 0; /* Top margin */
+    margin-left: 0; /* Left margin */
+    margin-right: 0; /* Right margin */
+    font-family: Arial, sans-serif; /* Font family */
+    font-weight: bold; /* Font weight */
+}
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('./wor.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Header styling */
+        .header {
+            top: 0px;
+            display: flex;
+           
+            align-items: center;
+            
+            background-color: dodgerblue;
+            border-bottom: 5px solid black;
+        }
+        .logo {
+            width: 60px;
+            height: auto;
+        }
+        .header h3 {
+            color: white;
+        }
+        .navigation {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navigation li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .navigation li a {
+            text-decoration: none;
+            color: white;
+            background-color: none;
+            padding: 8px 15px;
+            border-radius: 3px;
+        }
+        .navigation li a:hover {
+            background-color: deeppink;
+        }
+
+        /* Main content styling */
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Adding opacity to background */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container h2 {
+            color: darkolivegreen;
+        }
+        .container p {
+            color: #333;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: teal;
+            text-align: center;
+            width: 100%;
+            height: 70px;
+            color: white;
+            font-size: 25px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        /* Dropdown styles */
+        .dropdown-contents {
+            display: none;
+            position: absolute;
+            background-color: tomato;
+            text-decoration: none;
+            min-width: 120px;
+            z-index: 1;
+        }
+        .dropdown-contents a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+        .dropdown-contents a:hover {
+            background-color: red;
+        }
+        .dropdown:hover .dropdown-contents {
+            display: block;
+        }
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#errorMsg {
+    color: red;
+}
+.contact-info {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: left;
+}
+.contact-info1 {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: right;
+    margin-top: -200px;
+}
+.contact-info1 a{
+    text-decoration: none;
+    padding: 20px;
+    color: blue;
+    font-size: 20px;
+}
+footer {
+    background-color: darkred;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.contact-form {
+    padding: 20px;
+    text-align: center;
+    background-color: transparent; ;
+}
+
+.contact-form form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body style="background-image: url('./wor.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;">
+
+<header>
+    <div class="header">
+        <p class="p1"><i>Online Investment Training <br>
+        Planning Platform</i></p>
+         <ul class="navigation">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="servive.php">Contact Us</a></li>
+            <li class="dropdown">
+                <a href="#">Forms</a>
+                <div class="dropdown-contents">
+                    <a href="course.php">Course</a>
+                    <a href="comment.php">Comment</a>
+                    <a href="lesson.php">Lesson</a>
+                    <a href="Quiz.php">Quizes</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Tables</a>
+                <div class="dropdown-contents">
+                    <a href="course_table.php">Course</a>
+                    <a href="comment_table.php">Comment</a>
+                    <a href="lesson_table.php">Lesson</a>
+                    <a href="Quiz_table.php">Quizes</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Settings</a>
+                <div class="dropdown-contents">
+                    <a href="all.php">instructor</a>
+                    <a href="adminlogin.php">Admin</a>
+                    <a href="logout.php">Logout</a>
+                </div>
+            </li>
+        </ul>
+        <div class="search-bar">
+            <form action="search.php" method="GET">
+                <input type="search" name="query" placeholder="Search here" />
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</header>
+<center><div><p style="font-weight: bold;font-size: 20px;align-items: center;color: blue;">Online Investment Training Planning Platform</p></div></center>
+ <section class="contact-form">
+        <h2>Get in Touch</h2>
+        <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+<section class="contact-info">
+        <h2>Contact Information</h2>
+        <p><strong>Address:</strong> 123 Investment Street, kigali, Rwanda</p>
+        <p><strong>Email:</strong> onlineInvestment@gmail.com</p>
+        <p><strong>Phone:</strong> 09876543234</p>
+        <div><h5>any issues and help contact us on:<h5>
+    <p>Email:uwasediane@gmail.com</p>
+    <p>Phone:+250780062540</p>
+    <p>Address:st225,kg,rwanda</p>
+
+<div class="contact-info1">
+
+    <p>Connect with us on social media or social networkings:</p><br>
+
+  <a href="https://www.twitter.com/pdas" >TWITTER</a><br>
+  <a href="https://www.facebook.com/pdas"  >FACEBOOK</a><br>
+  <a href="https://www.instagram.com/pdas" >INSTAGRAM</a><br>
+  <a href="https://www.linkedin.com/pdas" >LINKEDIN</a><br>
+</p></div>
+    </section>
+
+   
+    <footer>
+        <p>&copy; 2024 Online Investment Training & Planning Platform</p>
+    </footer>
+</body>
+</html>
